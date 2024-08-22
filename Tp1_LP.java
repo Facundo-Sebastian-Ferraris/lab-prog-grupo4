@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit;
 public class Tp1_LP {
 
     public static void main(String[] args) {
-        int contador = 20;
         ScheduledExecutorService ejecutor = Executors.newScheduledThreadPool(2);
 
         Servidor servidor = new Servidor();
@@ -30,7 +29,6 @@ public class Tp1_LP {
             Thread.sleep(60000);
         } catch (InterruptedException e) {
         }
-        contador--;
 
         ejecutor.shutdown();
     }
