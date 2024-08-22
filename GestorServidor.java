@@ -1,5 +1,6 @@
 
 import java.util.Calendar;
+import patron;
 
 public class GestorServidor implements Runnable {
 
@@ -12,7 +13,14 @@ public class GestorServidor implements Runnable {
     @Override
     public void run() {
         this.servidor.cambiarEstado();
-        System.out.println("Estado del servidor actualizado" + " Tiempo Actual : "
-                + Calendar.getInstance().get(Calendar.SECOND));
+
+        String mensaje = "Gestor: Estado del servidor actualizado" + " Tiempo Actual : "
+        + Calendar.getInstance().get(Calendar.SECOND);
+
+        Medio email = new Correo();
+
+        Notificacion alerta = new Alerta(email);
+         alerta.enviar(mensaje);
+
     }
 }
