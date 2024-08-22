@@ -20,10 +20,10 @@ public class Tp1_LP {
 
         System.out.println("Tiempo Actual : " + Calendar.getInstance().get(Calendar.SECOND));
 
-        // Programar gestor para que se ejecute cada 10 segundos
+        // Programar gestor para que se ejecute cada 4 segundos
         ejecutor.scheduleAtFixedRate(gestor, 0, 4, TimeUnit.SECONDS);
 
-        // Programar monitor para que se ejecute cada 3 segundos
+        // Programar monitor para que se ejecute cada 6 segundos
         ejecutor.scheduleAtFixedRate(monitor, 0, 6, TimeUnit.SECONDS);
         try {
             Thread.sleep(60000);
