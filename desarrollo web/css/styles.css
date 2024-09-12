@@ -1,0 +1,47 @@
+body {
+    background-color: black; /* Fondo negro */
+    color: rgb(255, 255, 255); /* Color del texto blanco para mejor legibilidad */
+}
+/* Estilos generales para las cajas */
+
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%; /* Dos columnas de 200px */
+    gap: 0; /* Espacio entre las cajas */
+}
+
+.box {
+    padding: 5%;
+    margin: 2%;
+    text-align: center;
+    color: white;
+    font-size: 2vw; /* Tamaño de texto ajustable según el ancho de la pantalla */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos específicos para cada caja */
+.box1 {
+    background-color: red;
+    width: 50%; /* 50% del ancho de la ventana */
+    height: 30vh; /* 30% de la altura de la ventana */
+}
+
+.box2 {
+    background-color: blue;
+    width: 50%; /* 60% del ancho de la ventana */
+    height: 30vh; /* 25% de la altura de la ventana */
+}
+
+.box3 {
+    background-color: green;
+    width: 70%; /* 70% del ancho de la ventana */
+    height: 30%; /* 35% de la altura de la ventana */
+}
+
+/* Estilo responsive para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .box {
+        font-size: 4vw; /* Aumenta el tamaño del texto en pantallas pequeñas */
+    }
+}
