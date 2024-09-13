@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Div Boxes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav>
+        <button onclick="showSection('section1')">Sección 1</button>
+        <button onclick="showSection('section2')">Sección 2</button>
+        <button onclick="showSection('section3')">Sección 3</button>
+    </nav>
+
+    <section id="section1">
+        <div class="container">
+            <div class="box box1"></div>
+             <div class="box box2"></div>
+        </div>
+    </section>
+    <section id="section2">
+        <h1>HOLA MUNDO</h1>
+        <div class="box3"></div>
+    </section>
+
+    <section id="section3">
+        <h1>Chau MUNDO</h1>
+        <div class="box3"></div>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Mostrar la sección seleccionada
+            const sectionToShow = document.getElementById(sectionId);
+            sectionToShow.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
