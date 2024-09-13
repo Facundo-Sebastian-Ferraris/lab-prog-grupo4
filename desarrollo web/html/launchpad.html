@@ -4,23 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keyboard Launchpad</title>
-    <style>
-        .pad-button {
-            width: 100px;
-            height: 100px;
-            background-color: #ccc;
-            margin: 10px;
-            display: inline-block;
-            font-size: 20px;
-            text-align: center;
-            line-height: 100px;
-            border-radius: 10px;
-            transition: background-color 0.2s;
-        }
-        .active {
-            background-color: #4CAF50;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/lp.css">
 </head>
 <body>
 
@@ -34,7 +18,7 @@
         <div class="pad-button" data-key="U">U</div>
         <div class="pad-button" data-key="I">I</div>
         <div class="pad-button" data-key="O">O</div>
-        <div class="pad-button" data-key="P">P</div><br>
+        <div class="pad-button" data-key="P">P</div>
         <div class="pad-button" data-key="A">A</div>
         <div class="pad-button" data-key="S">S</div>
         <div class="pad-button" data-key="D">D</div>
@@ -44,7 +28,7 @@
         <div class="pad-button" data-key="J">J</div>
         <div class="pad-button" data-key="K">K</div>
         <div class="pad-button" data-key="L">L</div>
-        <div class="pad-button" data-key=";">;</div><br>
+        <div class="pad-button" data-key=";">;</div>
         <div class="pad-button" data-key="Z">Z</div>
         <div class="pad-button" data-key="X">X</div>
         <div class="pad-button" data-key="C">C</div>
@@ -54,9 +38,10 @@
         <div class="pad-button" data-key="M">M</div>
         <div class="pad-button" data-key=",">,</div>
         <div class="pad-button" data-key=".">.</div>
+        <div class="pad-button" data-key="/">/</div>
     </div>
 
     <!-- Asegúrate de que el script esté después del contenido del HTML -->
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/launchpadscript.js"></script>
 </body>
 </html>
