@@ -1,0 +1,28 @@
+body {
+    background-image: url('../images/samples/stars.gif');
+    background-size: 15vh 15vw; /* Tamaño de la imagen (ancho x alto) */
+    background-repeat: repeat; /* Repetir la imagen en ambas direcciones */
+    background-position: top left; /* Inicia la repetición desde la esquina superior izquierda */
+}
+.launchpad {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 botones por fila */
+    justify-items: center;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.pad-button {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.active {
+    background-color: #df50f5;
+}
