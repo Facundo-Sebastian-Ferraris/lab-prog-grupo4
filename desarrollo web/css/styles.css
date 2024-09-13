@@ -1,6 +1,6 @@
 body {
     background-image: url('../images/samples/matrix.gif');
-    background-size: 10vh 10vw; /* Tamaño de la imagen (ancho x alto) */
+    background-size: 50px 10vw; /* Tamaño de la imagen (ancho x alto) */
     background-repeat: repeat; /* Repetir la imagen en ambas direcciones */
     background-position: top left; /* Inicia la repetición desde la esquina superior izquierda */
 }
