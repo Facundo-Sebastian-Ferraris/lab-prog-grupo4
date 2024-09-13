@@ -1,21 +1,24 @@
 body {
-    background-color: black; /* Fondo negro */
-    color: rgb(255, 255, 255); /* Color del texto blanco para mejor legibilidad */
+    background-image: url('../images/samples/matrix.gif');
+    background-size: 10vh 10vw; /* Tamaño de la imagen (ancho x alto) */
+    background-repeat: repeat; /* Repetir la imagen en ambas direcciones */
+    background-position: top left; /* Inicia la repetición desde la esquina superior izquierda */
 }
-/* Estilos generales para las cajas */
-
 
 .container {
-    display: grid;
-    grid-template-columns: 50% 50%; /* Dos columnas de 200px */
-    gap: 0; /* Espacio entre las cajas */
+    display: flex;
+}
+
+.i{
+    color: white;
 }
 
 .box {
-    padding: 5%;
-    margin: 2%;
+    padding: 0%;
+    margin: 0%;
     text-align: center;
     color: white;
+    opacity: 0.7;
     font-size: 2vw; /* Tamaño de texto ajustable según el ancho de la pantalla */
     font-family: Arial, sans-serif;
 }
@@ -23,20 +26,40 @@ body {
 /* Estilos específicos para cada caja */
 .box1 {
     background-color: red;
+    background-image: url('../images/samples/cat-space.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Tamaño de la imagen (ancho x alto) */
+    transform: scaleX(-1);
     width: 50%; /* 50% del ancho de la ventana */
     height: 30vh; /* 30% de la altura de la ventana */
 }
 
 .box2 {
-    background-color: blue;
+    background-image: url('../images/samples/cat-space.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Tamaño de la imagen (ancho x alto) */
     width: 50%; /* 60% del ancho de la ventana */
     height: 30vh; /* 25% de la altura de la ventana */
 }
 
 .box3 {
-    background-color: green;
-    width: 70%; /* 70% del ancho de la ventana */
-    height: 30%; /* 35% de la altura de la ventana */
+    width: 25vw;
+    height: 20vh;
+    background-image: url('../images/samples/grupo-4.gif');
+    background-size: 100% 100%; 
+    position: absolute; /* Para superponer sobre la otra caja */
+    top: 7vh; /* Ajusta la distancia desde la parte superior */
+    left: 36vw; /* Ajusta la distancia desde la parte izquierda */
+    z-index: 1; /* Hace que la caja 2 esté por encima */
+}
+
+
+
+.centered-div {
+    width: 50%; /* O cualquier otro valor que prefieras */
+    margin: 0 auto; /* El auto en los márgenes horizontales centra el div */
+    background-color: lightblue;
+    text-align: center; /* Si también quieres centrar el contenido de texto */
 }
 
 /* Estilo responsive para pantallas más pequeñas */
@@ -44,4 +67,8 @@ body {
     .box {
         font-size: 4vw; /* Aumenta el tamaño del texto en pantallas pequeñas */
     }
+}
+
+h1,p {
+    color: white;
 }
