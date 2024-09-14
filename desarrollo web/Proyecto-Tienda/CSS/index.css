@@ -1,0 +1,45 @@
+nav{
+    display: grid;
+    background-color: rgb(217, 85, 85);
+    grid-template: 10vh/repeat(5,20%);
+    grid-gap: 10px; /* Espacio entre las celdas */
+    padding: 10px;
+}
+
+nav > div{
+    background-color: blue;
+}
+
+.logo{
+    order:0;
+    background-color: blueviolet;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.btn{
+    order: 1;
+    background-color: rgb(101, 226, 43);
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between; /* Las barras se van a los extremos */
+    align-items: center; /* Centra las barras y contenido verticalmente */
+}
+
+.barraLateral {
+    width: 15vw;
+    min-height: 100vh;
+    background-color: brown;
+}
+
+.contenidoPrincipal {
+    flex-grow: 1; /* Ocupa todo el espacio restante entre las barras */
+    text-align: center;
+    background-color: lightgray;
+}
