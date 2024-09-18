@@ -7,5 +7,5 @@ abstract class Notificacion {
         this.medio = m;
     }
 
-    abstract void enviar(String msj);
+    abstract void enviar(String msj);   
 }
