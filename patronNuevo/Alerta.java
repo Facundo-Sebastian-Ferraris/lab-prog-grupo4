@@ -1,3 +1,4 @@
+package patronNuevo;
 public class Alerta extends Notificacion{
     public Alerta(Medio medio){
         super(medio);

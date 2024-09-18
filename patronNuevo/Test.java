@@ -1,3 +1,6 @@
+package patronNuevo;
+
+
 public class Test {
     public static void main(String[] args) {
         Medio email = new Correo();
