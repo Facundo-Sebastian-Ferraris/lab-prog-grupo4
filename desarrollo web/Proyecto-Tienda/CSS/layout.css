@@ -1,0 +1,39 @@
+/*CSS PARA UBICACION DE CAJAS
+Estilos generales de estructura (grid, flexbox, contenedores, cabecera, pie de página).
+*/
+
+.boton {
+    width: 100%;    /* Ocupar el 100% del ancho del contenedor */
+    height: 100%;   /* Ocupar el 100% de la altura del contenedor */
+    box-sizing: border-box; /* Incluir padding y bordes dentro del tamaño total */
+    font-size: 1.2em;
+    border: none;  /* Quitar borde por defecto del botón */
+    padding: 0;    /* Quitar padding interno para que el botón ocupe todo */
+}
+
+.btn {
+    order: 1;
+    padding: 30px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template: 1fr/ 10vw 1fr 10vw;
+}
+
+.contenidoPrincipal {
+    flex-grow: 1; /* Ocupa todo el espacio restante entre las barras */
+    text-align: center;
+}
+
+.logo {
+    order: 0;
+    padding: 30px;
+}
+
+nav {
+    display: grid;
+    grid-template: 10vh/repeat(5, 20%);
+    grid-gap: 10px; /* Espacio entre las celdas */
+    padding: 10px;
+}

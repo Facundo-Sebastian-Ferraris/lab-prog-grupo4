@@ -1,9 +1,15 @@
 nav{
-    display: grid;
     background-color: rgb(217, 85, 85);
-    grid-template: 10vh/repeat(5,20%);
-    grid-gap: 10px; /* Espacio entre las celdas */
-    padding: 10px;
+}
+
+
+/* El botón ocupa el 100% del espacio de su contenedor */
+.boton {
+    background-color: blue;
+    color: white;
+    font-size: 1.2em;
+    border: none;  /* Quitar borde por defecto del botón */
+    padding: 0;    /* Quitar padding interno para que el botón ocupe todo */
 }
 
 nav > div{
@@ -26,15 +32,7 @@ nav > div{
     font-size: 1.5em;
 }
 
-.contenedor {
-    display: flex;
-    justify-content: space-between; /* Las barras se van a los extremos */
-    align-items: center; /* Centra las barras y contenido verticalmente */
-}
-
 .barraLateral {
-    width: 15vw;
-    min-height: 100vh;
     background-color: brown;
 }
 
@@ -42,4 +40,21 @@ nav > div{
     flex-grow: 1; /* Ocupa todo el espacio restante entre las barras */
     text-align: center;
     background-color: lightgray;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;scale: 10%;
+    }
+    to{
+        opacity: 1;scale: 100%;
+    }
+}
+
+img{
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
 }
