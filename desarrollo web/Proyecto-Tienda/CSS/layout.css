@@ -23,6 +23,9 @@ Estilos generales de estructura (grid, flexbox, contenedores, cabecera, pie de p
 
 .contenidoPrincipal {
     flex-grow: 1; /* Ocupa todo el espacio restante entre las barras */
+}
+
+img{
     text-align: center;
 }
 
@@ -37,3 +40,4 @@ nav {
     grid-gap: 10px; /* Espacio entre las celdas */
     padding: 10px;
 }
+
