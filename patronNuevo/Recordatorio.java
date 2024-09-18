@@ -1,3 +1,4 @@
+package patronNuevo;
 public class Recordatorio extends Notificacion{
     public Recordatorio(Medio medio){
         super(medio);

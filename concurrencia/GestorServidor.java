@@ -1,6 +1,7 @@
+package concurrencia;
 
 import java.util.Calendar;
-import patron.*;
+
 
 public class GestorServidor implements Runnable {
 
