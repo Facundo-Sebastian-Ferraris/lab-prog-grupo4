@@ -5,6 +5,31 @@ body{
     margin: 0%;
 }
 
+
+/*CONTENEDOR PARA NAVEGACION*/
+nav {
+    display: grid;
+    grid-template: 1vh 10vh 1vh/20% 2% repeat(4, 20%);
+    grid-gap: 10px; /* Espacio entre las celdas */
+    padding: 10px;
+}
+
+.logo {
+    order: 0;
+    padding: 0px;
+    grid-area: 2/1;
+}
+
+.logoImg{
+    border-radius: 50%;
+}
+
+.boton {
+    border: none;  /* Quitar borde por defecto del botón */
+    padding: 0;    /* Quitar padding interno para que el botón ocupe todo */
+}
+
+
 .boton {
     width: 100%;    /* Ocupar el 100% del ancho del contenedor */
     height: 100%;   /* Ocupar el 100% de la altura del contenedor */
@@ -29,28 +54,15 @@ body{
     grid-area: 2/5;
 }
 
+/*CONTENEDOR PARA BARRAS LATERALES Y PRINCIPAL*/
 .contenedor {
     display: grid;
     grid-template: 1fr/ 10vw 1fr 10vw;
 }
 
-.ContenedorCentral{
-    text-align: center;
-}
-
-.contenidoPrincipal {
-    flex-grow: 1; /* Ocupa todo el espacio restante entre las barras */
-}
-
 .imagenInicio{
-    height: 1024px;
-    width: 1024px;
-}
-
-.logo {
-    order: 0;
-    padding: 0px;
-    grid-area: 2/1;
+    width: 480px;
+    aspect-ratio: 1/1;
 }
 
 .imagenLogo{
@@ -58,10 +70,10 @@ body{
     width: 70%;
 }
 
-nav {
-    display: grid;
-    grid-template: 1vh 10vh 1vh/20% 2% repeat(4, 20%);
-    grid-gap: 10px; /* Espacio entre las celdas */
-    padding: 10px;
-}
 
+/*Layouts Auxiliares*/
+    /*Caja auxiliar para centrar entidad*/
+.centralizador{
+    text-align: center;
+    grid-area: 1/2;
+}

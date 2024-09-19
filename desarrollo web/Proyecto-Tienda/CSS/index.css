@@ -1,10 +1,7 @@
 
 
 /* El botón ocupa el 100% del espacio de su contenedor */
-.boton {
-    border: none;  /* Quitar borde por defecto del botón */
-    padding: 0;    /* Quitar padding interno para que el botón ocupe todo */
-}
+
 
 nav > div{
     background-color: black;
@@ -27,26 +24,3 @@ nav > div{
 }
 
 
-
-.contenidoPrincipal {
-    background-color: lightgray;
-}
-
-@keyframes show {
-    from {
-        opacity: 0;
-        transform: scale(0.1);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-img{
-    view-timeline-name: --reveal;
-    animation-name: show;
-    animation-fill-mode: both;
-    animation-timeline: --reveal;
-    animation-range: entry 25% cover 50%;
-}

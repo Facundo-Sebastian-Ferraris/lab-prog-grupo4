@@ -1,18 +1,25 @@
 @font-face {
-    font-family: 'comic'; /* Nombre que defines */
-    src: url('../assets/fonts/Rethogen\ Atomics.otf') format('truetype'); /* Ruta a la fuente */
-    /* Puedes agregar más formatos si tienes otros archivos (eot, woff, etc.) */
-  }
-
-  .boton {
-    font-family: comic;
-    font-size: 5em;
-    border: none;  /* Quitar borde por defecto del botón */
-    padding: 0;    /* Quitar padding interno para que el botón ocupe todo */
+    font-family: 'comic';
+    src: url('../assets/fonts/Rethogen Atomics.otf') format('opentype');
 }
 
-p{
-    margin: 2%;
-    font-size: 4em;
+html {
+    font-size: 16px;
+}
+
+.boton {
+    font-family: comic;
+    font-size: 4rem;
+    border: none;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    margin: 3rem;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
 }

@@ -1,20 +1,40 @@
-nav{
-    background-color:  #ff0035;
+:root{
+    --paleta1: rgba(35, 31, 32, 0.75);
+    --paleta2: #CEE7E6;
+    --paleta3: #ff0035;
+    --paleta4: #ff0035;
+
+    --error: #ff00e1;
+    --txt:var(--paleta2)
+    
 }
 
-body, .barraLateral {
-    background-color: black;
+nav{
+    background-color: var(--paleta1);
 }
+
+body {
+    background-color: var(--error);
+    background-image: url('../assets/neonRoad.gif');
+    background-size: 110% auto; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+}
+
+
 
 .boton {
-    background-color: black;
-    color: white;
+    background: color var(--paleta1);
+    color: var(--txt);
 }
 
-.contenidoPrincipal {
-    background-color:#231F20;
+.centralizador {
+    background-color:var(--paleta1);
 }
 
-p{
-    color: #CEE7E6;
+p,h1{
+    color: var(--txt);
 }
+
