@@ -7,7 +7,7 @@ html {
     font-size: 16px;
 }
 
-.boton {
+.btn1, .btn2, .btn3  {
     font-family: comic;
     font-size: 4rem;
     border: none;

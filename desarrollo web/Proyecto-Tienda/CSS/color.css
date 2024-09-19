@@ -1,5 +1,6 @@
 :root{
-    --paleta1: rgba(35, 31, 32, 0.75);
+    --paleta1: rgba(35, 31, 32, 0);
+    --paleta11: rgba(35, 31, 32, 0.7);
     --paleta2: #CEE7E6;
     --paleta3: #ff0035;
     --paleta4: #ff0035;
@@ -25,8 +26,8 @@ body {
 
 
 
-.boton {
-    background: color var(--paleta1);
+.btn1, .btn2, .btn3  {
+    background-color: var(--paleta11);
     color: var(--txt);
 }
 

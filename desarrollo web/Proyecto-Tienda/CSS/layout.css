@@ -30,26 +30,37 @@ nav {
 }
 
 
-.boton {
+
+
+.btn1 {
+    width: 100%;    /* Ocupar el 100% del ancho del contenedor */
+    height: 100%;   /* Ocupar el 100% de la altura del contenedor */
+    box-sizing: border-box; /* Incluir padding y bordes dentro del tamaño total */
+    font-size: 1.2em;
+    border: none;  /* Quitar borde por defecto del botón */
+    padding: 0px;
+    grid-area: 2/3;
+    border-radius: 5%;
+}
+
+.btn2 {
+    width: 100%;    /* Ocupar el 100% del ancho del contenedor */
+    height: 100%;   /* Ocupar el 100% de la altura del contenedor */
+    box-sizing: border-box; /* Incluir padding y bordes dentro del tamaño total */
+    font-size: 1.2em;
+    border: none;  /* Quitar borde por defecto del botón */
+    padding: 0px;
+    grid-area: 2/4;
+    border-radius: 5%;
+}
+
+.btn3 {
     width: 100%;    /* Ocupar el 100% del ancho del contenedor */
     height: 100%;   /* Ocupar el 100% de la altura del contenedor */
     box-sizing: border-box; /* Incluir padding y bordes dentro del tamaño total */
     font-size: 1.2em;
     border: none;  /* Quitar borde por defecto del botón */
     padding: 0;    /* Quitar padding interno para que el botón ocupe todo */
-}
-
-.btn1 {
-    padding: 0px;
-    grid-area: 2/3;
-}
-
-.btn2 {
-    padding: 0px;
-    grid-area: 2/4;
-}
-
-.btn3 {
     padding: 0px;
     grid-area: 2/5;
 }
