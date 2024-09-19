@@ -33,28 +33,36 @@
 }
 
 .efecto {
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 
     view-timeline-name: --reveal;
     view-timeline-axis: block;
     animation-timeline: --reveal;
-    animation-name: animacionUnificada;
+    animation-name: imgIn;
     animation-range: entry 0% cover 100%;
     animation-fill-mode: both;
 }
 
-@keyframes animacionUnificada {
-    0% {
+@keyframes imgIn {
+    0%{
         opacity: 0;
-        transform: scale(0.1) translateY(-2700px);
+        transform: scale(5);
     }
-    50% {
+    40%{
         opacity: 1;
-        transform: scale(1);
     }
-    100% {
+    55%{
+        opacity: 1;
+    }   
+    60%{
+        opacity: 0.5;
+    }
+    65%{
         opacity: 0;
-        transform: scale(2) translateY(2500px);
+    }
+    100%{
+        opacity: 0;
+        transform:scale(0.01);
     }
 }

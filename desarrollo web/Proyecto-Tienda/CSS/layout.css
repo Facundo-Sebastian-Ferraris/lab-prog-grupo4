@@ -3,6 +3,7 @@ Estilos generales de estructura (grid, flexbox, contenedores, cabecera, pie de p
 */
 body{
     margin: 0%;
+    overflow-x: hidden;
 }
 
 
@@ -12,7 +13,7 @@ nav {
     grid-template: 1vh 10vh 1vh/20% 2% repeat(4, 20%);
     grid-gap: 10px; /* Espacio entre las celdas */
     padding: 10px;
-}
+}   
 
 .logo {
     order: 0;
@@ -22,6 +23,7 @@ nav {
 
 .logoImg{
     border-radius: 50%;
+    margin-bottom: 20%;
 }
 
 .boton {
@@ -88,3 +90,9 @@ nav {
     text-align: center;
     grid-area: 1/2;
 }
+
+.efecto{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+

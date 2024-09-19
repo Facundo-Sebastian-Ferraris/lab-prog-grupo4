@@ -17,14 +17,16 @@ nav{
 body {
     background-color: var(--error);
     background-image: url('../assets/neonRoad.gif');
-    background-size: 110% auto; 
+    background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
     background-attachment: fixed; 
     margin: 0;
 }
 
-
+.efecto{
+    background-color: var(--paleta11);
+}
 
 .btn1, .btn2, .btn3  {
     background-color: var(--paleta11);
