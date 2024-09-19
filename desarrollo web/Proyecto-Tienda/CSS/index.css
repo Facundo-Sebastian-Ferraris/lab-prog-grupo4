@@ -1,24 +1,18 @@
-nav{
-    background-color: rgb(217, 85, 85);
-}
 
 
 /* El botón ocupa el 100% del espacio de su contenedor */
 .boton {
-    background-color: blue;
-    color: white;
-    font-size: 1.2em;
     border: none;  /* Quitar borde por defecto del botón */
     padding: 0;    /* Quitar padding interno para que el botón ocupe todo */
 }
 
 nav > div{
-    background-color: blue;
+    background-color: black;
 }
 
 .logo{
     order:0;
-    background-color: blueviolet;
+    background-color: black;
     padding: 30px;
     text-align: center;
     font-size: 1.5em;
@@ -27,17 +21,14 @@ nav > div{
 .btn{
     order: 1;
     background-color: rgb(101, 226, 43);
-    padding: 30px;
+    padding: 0px;
     text-align: center;
     font-size: 1.5em;
 }
 
-.barraLateral {
-    background-color: brown;
-}
+
 
 .contenidoPrincipal {
-    flex-grow: 1; /* Ocupa todo el espacio restante entre las barras */
     background-color: lightgray;
 }
 

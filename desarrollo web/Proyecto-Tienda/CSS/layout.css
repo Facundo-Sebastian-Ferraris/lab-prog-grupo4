@@ -1,6 +1,9 @@
 /*CSS PARA UBICACION DE CAJAS
 Estilos generales de estructura (grid, flexbox, contenedores, cabecera, pie de página).
 */
+body{
+    margin: 0%;
+}
 
 .boton {
     width: 100%;    /* Ocupar el 100% del ancho del contenedor */
@@ -11,9 +14,19 @@ Estilos generales de estructura (grid, flexbox, contenedores, cabecera, pie de p
     padding: 0;    /* Quitar padding interno para que el botón ocupe todo */
 }
 
-.btn {
-    order: 1;
-    padding: 30px;
+.btn1 {
+    padding: 0px;
+    grid-area: 2/3;
+}
+
+.btn2 {
+    padding: 0px;
+    grid-area: 2/4;
+}
+
+.btn3 {
+    padding: 0px;
+    grid-area: 2/5;
 }
 
 .contenedor {
@@ -21,22 +34,33 @@ Estilos generales de estructura (grid, flexbox, contenedores, cabecera, pie de p
     grid-template: 1fr/ 10vw 1fr 10vw;
 }
 
+.ContenedorCentral{
+    text-align: center;
+}
+
 .contenidoPrincipal {
     flex-grow: 1; /* Ocupa todo el espacio restante entre las barras */
 }
 
-img{
-    text-align: center;
+.imagenInicio{
+    height: 1024px;
+    width: 1024px;
 }
 
 .logo {
     order: 0;
-    padding: 30px;
+    padding: 0px;
+    grid-area: 2/1;
+}
+
+.imagenLogo{
+    height: 100%;
+    width: 70%;
 }
 
 nav {
     display: grid;
-    grid-template: 10vh/repeat(5, 20%);
+    grid-template: 1vh 10vh 1vh/20% 2% repeat(4, 20%);
     grid-gap: 10px; /* Espacio entre las celdas */
     padding: 10px;
 }

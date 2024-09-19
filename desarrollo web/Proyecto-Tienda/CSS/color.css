@@ -1,0 +1,20 @@
+nav{
+    background-color:  #ff0035;
+}
+
+body, .barraLateral {
+    background-color: black;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+}
+
+.contenidoPrincipal {
+    background-color:#231F20;
+}
+
+p{
+    color: #CEE7E6;
+}
