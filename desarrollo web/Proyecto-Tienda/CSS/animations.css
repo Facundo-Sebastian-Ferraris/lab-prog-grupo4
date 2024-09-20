@@ -1,8 +1,7 @@
 /*ANIMACIONES DE MOVIMIENTO*/
-.girar{
+.girar, .foto:hover{
     animation: giro 1s linear infinite;
 }
-
 
 @keyframes giro {
     0%{
