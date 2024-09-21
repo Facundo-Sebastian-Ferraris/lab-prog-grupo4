@@ -1,0 +1,106 @@
+@import 'barranav.css';
+@import 'colors.css';
+
+/*FONDO*/
+body {
+    background-color: var(--error);
+    background-image: url('../assets/neonRoad.gif');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0; /*agregado*/
+    box-sizing: border-box; /*agregado*/
+    height: 100vh; /*agregado*/
+    overflow-x: hidden;
+}
+
+
+/*Propios de la seccion*/
+
+.productos .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
+}
+
+.productos .box-container .maincontainer{
+    text-align: center;
+    /*border: .1rem solid white;*/
+    padding: 1rem;
+    margin:0;
+}
+
+img{
+    height: 10rem;
+}
+
+.heading, .precio{
+    color: white;
+    font-size: 2.5rem;
+    padding: 0;
+}
+
+h3{
+    color: white;
+    font-size: 2rem;
+    padding: 0;
+    margin:0;
+}
+
+
+.maincontainer{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+
+.producto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.producto:hover{
+    transform: rotateY(180deg);
+}
+
+.frente{
+    /*lineas prueba*/
+    text-align: center;
+    border: .1rem solid white;
+    padding: 2rem;
+
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ffc728;
+    color: #333;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*se muestra el reverso al usar el hoover*/
+.reverso{
+
+    text-align: center;
+    border: .1rem solid white;
+    padding: 2rem;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #9f4d4d;
+    color: #333;
+    transform: rotateY(180deg);
+}
