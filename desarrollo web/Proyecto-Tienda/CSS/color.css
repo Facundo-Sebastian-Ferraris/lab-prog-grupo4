@@ -10,7 +10,7 @@
     
 }
 
-nav{
+nav, nav > div{
     background-color: var(--paleta1);
 }
 
@@ -24,7 +24,8 @@ body {
     margin: 0;
 }
 
-.efecto{
+
+.efecto, .logo{
     background-color: var(--paleta11);
 }
 
@@ -33,9 +34,11 @@ body {
     color: var(--txt);
 }
 
-.centralizador {
-    background-color:var(--paleta1);
+.btn{
+    background-color: var(--error);
 }
+
+
 
 p,h1{
     color: var(--txt);

@@ -7,6 +7,11 @@ html {
     font-size: 16px;
 }
 
+.logo{
+    text-align: center;
+    font-size: 1.5em;
+}
+
 .btn1, .btn2, .btn3  {
     font-family: comic;
     font-size: 4rem;
@@ -29,4 +34,11 @@ p {
     margin: 3rem;
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.btn{
+    text-align: center;
+    font-size: 1.5em;
 }

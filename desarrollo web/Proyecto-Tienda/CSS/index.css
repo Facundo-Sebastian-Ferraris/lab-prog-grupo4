@@ -1,26 +1,5 @@
-
-
-/* El botón ocupa el 100% del espacio de su contenedor */
-
-
-nav > div{
-    background-color: black;
-}
-
-.logo{
-    order:0;
-    background-color: black;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.btn{
-    order: 1;
-    background-color: rgb(101, 226, 43);
-    padding: 0px;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-
+@import 'index.css';
+@import 'layout.css';
+@import 'color.css';
+@import 'typography.css';
+@import 'animations.css';
