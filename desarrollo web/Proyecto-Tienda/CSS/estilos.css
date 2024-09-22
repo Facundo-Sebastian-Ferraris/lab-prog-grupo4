@@ -1,6 +1,11 @@
 @import 'barranav.css';
 @import 'colors.css';
 
+@font-face {
+    font-family: 'comic';
+    src: url('../assets/fonts/Rethogen Atomics.otf') format('opentype');
+}
+
 /*FONDO*/
 body {
     background-color: var(--error);
@@ -9,31 +14,31 @@ body {
     background-position: center; 
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    margin: 0;
-    padding: 0; /*agregado*/
-    box-sizing: border-box; /*agregado*/
     height: 100vh; /*agregado*/
     overflow-x: hidden;
 }
 
-
 /*Propios de la seccion*/
 
-h1{
-    font-size: 5rem;
-    text-align: center;
-    color: var(--txt);
+:root{
+    --level-one: translateZ(3rem);
+    --level-two: translateZ(6rem);
+    --level-three: translateZ(9rem);
+
+    --fw-normal: 400;
+    --fw-bold: 700;
 }
 
-.productos .box-container{
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contenido{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-    gap:1.5rem;
-    margin: 25px;
-    padding: 10px;
     place-items: center;
 }
-
 
 .card{
     width: 400px;
@@ -52,38 +57,68 @@ h1{
     transform: rotateY(.5turn);
 }
 
-
-.frente,
-.reverso{
+.front,
+.back{
     position: absolute;
-    top: 0;
+    top:0;
     bottom: 0;
     left:0;
-    right:0;
-    padding: 2em;
-    backface-visibility:hidden;
+    right: 0;
+    padding: 15em 3em;
+    backface-visibility: hidden;
     transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+    color: white; /*de las letras tanto del front como back*/
 }
 
-.frente{
-    background: lightgreen;
+.front{
+    background: black; /*rgb(119, 123, 119);*/
+    background-image: url('../assets/hamburguesa.png');
+    background-size: cover;
+    background-blend-mode:difference; /*overlay*/
 }
 
-.reverso{
+.front::before{
+    content: "";
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    bottom: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid currentColor; /*currentColor, trae el balnco del front*/
+    transform:  var(--level-one);
+}
+
+
+.card__title{
+    font-size: 2.8rem;
+    transform: var(--level-three);
+    translate: 0rem 8rem;
+    order: 2;
+    text-transform: uppercase;
+    font-family: comic;
+}
+
+.card__sub{
+    transform: var(--level-two);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .75rem;
+    font-weight: var(--fw-bold);
+    opacity: .7;
+    translate: 0rem -8rem;
+}
+
+.card__body{
+    transform: var(--level-two);
+    font-weight: var(--fw-normal);
+    font-size: 1.5rem;
+    line-height:  1.6;
+}
+
+.back{
     transform: rotateY(.5turn);
-    background: lightblue;
-}
-
-.titulo__producto{
-    color: rgb(27, 38, 126);
-    font-size: 3rem;
-    transform: translateZ(6rem);
-}
-
-.descripcion{
-    transform: translateZ(3rem);
-}
-
-img{
-    height: 10rem;
+    background: #333;
 }
