@@ -191,3 +191,10 @@ nav {
     margin-bottom: 20vh;
 }
 
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    /* Otros estilos para pantallas pequeñas */
+}
