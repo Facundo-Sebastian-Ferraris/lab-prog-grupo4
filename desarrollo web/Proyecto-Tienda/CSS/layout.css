@@ -196,5 +196,8 @@ nav {
     body {
         font-size: 14px;
     }
-    /* Otros estilos para pantallas pequeñas */
+
+    p{
+        font-size: 8px;
+    }
 }
