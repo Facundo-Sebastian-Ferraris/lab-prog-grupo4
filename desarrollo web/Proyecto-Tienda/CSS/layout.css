@@ -185,11 +185,68 @@ nav {
         font-size: 14px;
     }
 
-    p{
-        font-size: 6px;
+    /* Reorganizar el grid para apilar elementos en móviles */
+    nav {
+        grid-template: 1vh 10vh 1vh / 1fr;
     }
 
-    .boton{
-        font-size: 6px;
+    .contenedorFinal {
+        grid-template: repeat(6, 1fr) / 1fr; /* Cambia a 1 columna en móviles */
+    }
+
+    /* Redimensionar imágenes y fuentes */
+    .foto {
+        width: 100px;
+        height: 100px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .boton {
+        font-size: 10px;
+    }
+
+    /* Ajustar los botones a pantalla completa */
+    .btn1, .btn2, .btn3 {
+        grid-area: auto; /* Elimina la disposición fija */
+        width: 100%; /* Ocupan el 100% del ancho */
+        margin: 5px 0; /* Espaciado vertical entre botones */
+    }
+
+    /* Ajustar la imagen de inicio en móviles */
+    .imagenInicio {
+        width: 80%;
+        aspect-ratio: 1/1;
+    }
+
+    .imagenLogo {
+        width: 50%;
+    }
+}
+
+/* Media Query para pantallas menores a 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .boton {
+        font-size: 8px;
+    }
+
+    /* Reorganizar aún más el contenido */
+    .contenedorFinal {
+        grid-template: repeat(6, 1fr) / 1fr; /* Mantener 1 columna en pantallas pequeñas */
+    }
+
+    .btn1, .btn2, .btn3 {
+        width: 100%; /* Asegura que los botones ocupen todo el ancho */
+        font-size: 12px; /* Ajuste adicional en el tamaño de la fuente */
+    }
+
+    .imagenInicio {
+        width: 100%;
     }
 }
