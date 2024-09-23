@@ -127,38 +127,26 @@ nav {
     margin-bottom: 20%;
 }
 
-
-
-.btn1 {
+.boton{
     width: 100%;    
     height: 100%;  
     box-sizing: border-box; 
-    font-size: 1.2em;
+    font-size: 1em;
     border: none;  
     padding: 0px;
-    grid-area: 2/3;
     border-radius: 5%;
+
+}
+
+.btn1 {
+    grid-area: 2/3;
 }
 
 .btn2 {
-    width: 100%;    
-    height: 100%;  
-    box-sizing: border-box; 
-    font-size: 1.2em;
-    border: none;  
-    padding: 0px;
     grid-area: 2/4;
-    border-radius: 5%;
 }
 
 .btn3 {
-    width: 100%;    /* Ocupar el 100% del ancho del contenedor */
-    height: 100%;   /* Ocupar el 100% de la altura del contenedor */
-    box-sizing: border-box; /* Incluir padding y bordes dentro del tamaño total */
-    font-size: 1.2em;
-    border: none;  /* Quitar borde por defecto del botón */
-    padding: 0;    /* Quitar padding interno para que el botón ocupe todo */
-    padding: 0px;
     grid-area: 2/5;
 }
 
