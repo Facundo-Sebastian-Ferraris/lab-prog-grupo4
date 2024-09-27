@@ -208,11 +208,10 @@ nav {
         font-size: 10px;
     }
 
-    /* Ajustar los botones a pantalla completa */
     .btn1, .btn2, .btn3 {
-        grid-area: auto; /* Elimina la disposición fija */
-        width: 100%; /* Ocupan el 100% del ancho */
-        margin: 5px 0; /* Espaciado vertical entre botones */
+        grid-area: auto;
+        width: 100%;
+        margin: 5px;
     }
 
     /* Ajustar la imagen de inicio en móviles */
