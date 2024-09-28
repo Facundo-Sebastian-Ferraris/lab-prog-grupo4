@@ -4,17 +4,12 @@
 }
 
 html {
-    font-size: 16px;
-}
-
-.logo {
-    text-align: center;
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(8px,12px,32px);
 }
 
 .btn1, .btn2, .btn3 {
     font-family: comic;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(1rem, 2vw, 4rem);
     border: none;
     padding: 0;
 }
