@@ -19,7 +19,7 @@
     animation-fill-mode: both;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .efecto {
         animation: none;
     }
