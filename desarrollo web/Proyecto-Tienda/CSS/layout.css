@@ -6,39 +6,53 @@ body {
     overflow-x: hidden;
 }
 
-/*CONTENEDOR PARA NAVEGACION*/
+/* Layout Navegacion */
 nav {
     display: flex;
-    align-items: center;
-    padding: 10px;
+    height: clamp(30px,15vh,100px);
+    margin-top: clamp(5px,10vh,40px);
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+.imagenLogo {
+    justify-self: flex-start;
+    height: 100%;
+    width: clamp(10px, 10vw, 200px);
+    padding: 0px;
 }
 
 .boton {
-    width:  100%;
+    width:  15vw;
     height: 100%;
-    box-sizing: border-box;
     font-size:1em;
     border: none;
-    margin: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    margin:0%;
     border-radius: 2%;
     display: flex;
     align-items: center;
-}
-
-.btn1 {
     justify-content: center;
+}
+
+.logo {
+    padding: 0px;
+    margin: 0%;
+    width: clamp(10px, 10vw, 200px);
+    justify-content: flex-start;
 
 }
 
-.btn2 {
-    justify-content: center;
+.logoImg {
+    border-radius: 50%;
+    margin-bottom: 20vh;
 
 }
 
-.btn3 {
-    justify-content: center;
-
-}
+/* Layout creditos */
 
 .contenedorFinal {
     grid-area: 2/2;
@@ -50,7 +64,6 @@ nav {
 
 .credito_formato_foto {
     background-size: cover;
-    background-color: red;
     border-radius: 50%;
     width: 100%;
     height: 100%;
@@ -58,7 +71,7 @@ nav {
 
 .credito_foto_contenedor{
     display: grid;
-    grid-template: 100% / 1fr clamp(100px, 20vw, 300px) 1fr;
+    grid-template: clamp(120px, 20vw, 175px) / 1fr clamp(120px, 20vw, 175px) 1fr;
 }
 
 .foto_contenedor1 {
@@ -105,42 +118,45 @@ nav {
     grid-area: 1/2;
 }
 
-.logo {
-    order: 0;
-    padding: 0px;
-    grid-area: 2/1;
-}
 
-.logoImg {
-    border-radius: 50%;
-    margin-bottom: 20%;
-}
 
 
 /*CONTENEDOR PARA BARRAS LATERALES Y PRINCIPAL*/
 .contenedor {
     display: grid;
-    grid-template: 6fr clamp(500px, 85vh, 1000px) / clamp(50px, 10vw, 200px) 1fr clamp(50px, 10vw, 200px);
+    grid-template: 6fr clamp(500px, 85vh, 1000px) / clamp(50px, 5vw, 100px) 1fr clamp(50px, 5vw, 100px);
 }
 
-.imagenInicio {
-    width: clamp(300px, 50vw, 600px);
-    aspect-ratio: 1/1;
-}
 
-.imagenLogo {
-    height: 100%;
-    width: clamp(100px, 70vw, 200px);
-}
+
 
 /*Layouts Auxiliares*/
 /*Caja auxiliar para centrar entidad*/
 .centralizador {
     text-align: center;
     grid-area: 1/2;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 
 .efecto {
+    width: clamp(100px,100%,720px);
+    height: auto;
+    padding: auto;
     margin-top: clamp(100px, 20vh, 300px);
     margin-bottom: clamp(100px, 20vh, 300px);
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen_centrada {
+    width: clamp(300px, 50vw, 600px);
+    align-self: center;
+    
 }

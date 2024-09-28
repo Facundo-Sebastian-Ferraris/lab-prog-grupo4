@@ -9,7 +9,6 @@
 }
 
 .efecto {
-    margin-top: 20%;
     margin-bottom: 20%;
 
     view-timeline-name: --reveal;
@@ -19,6 +18,13 @@
     animation-range: entry 0% cover 100%;
     animation-fill-mode: both;
 }
+
+@media (max-width: 700px) {
+    .efecto {
+        animation: none;
+    }
+}
+
 
 @keyframes giro {
     0%{
@@ -48,13 +54,14 @@
 @keyframes imgIn {
     0%{
         opacity: 0;
-        transform: scale(5);
+        transform: scale(3);
     }
     40%{
         opacity: 1;
     }
     55%{
         opacity: 1;
+
     }   
     60%{
         opacity: 0.5;
@@ -64,6 +71,6 @@
     }
     100%{
         opacity: 0;
-        transform:scale(0.01);
+        transform:scale(0.4);
     }
 }
