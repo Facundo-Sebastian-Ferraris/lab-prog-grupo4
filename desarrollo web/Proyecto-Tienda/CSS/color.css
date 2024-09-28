@@ -12,6 +12,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     margin: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 
@@ -30,7 +32,6 @@ body {
 .boton:hover{
     background-color: var(--botonHover);
 }
-
 
 
 p,h1{

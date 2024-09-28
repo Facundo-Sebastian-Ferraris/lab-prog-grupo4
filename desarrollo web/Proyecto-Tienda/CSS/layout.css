@@ -9,10 +9,10 @@ body {
 /* Layout Navegacion */
 nav {
     display: flex;
-    height: 15vh;
-    
+    height: clamp(30px,15vh,100px);
+    margin-top: clamp(5px,10vh,40px);
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0px;
 }
 
@@ -48,7 +48,8 @@ nav {
 
 .logoImg {
     border-radius: 50%;
-    margin-bottom: 20%;
+    margin-bottom: 20vh;
+
 }
 
 /* Layout creditos */
@@ -63,7 +64,6 @@ nav {
 
 .credito_formato_foto {
     background-size: cover;
-    background-color: red;
     border-radius: 50%;
     width: 100%;
     height: 100%;
@@ -71,7 +71,7 @@ nav {
 
 .credito_foto_contenedor{
     display: grid;
-    grid-template: 100% / 1fr clamp(100px, 20vw, 300px) 1fr;
+    grid-template: clamp(120px, 20vw, 175px) / 1fr clamp(120px, 20vw, 175px) 1fr;
 }
 
 .foto_contenedor1 {
@@ -147,14 +147,15 @@ nav {
 
 .efecto {
     width: clamp(100px,100%,720px);
-    height: clamp(100px, 30vw,720px);
+    height: auto;
+    padding: auto;
     margin-top: clamp(100px, 20vh, 300px);
     margin-bottom: clamp(100px, 20vh, 300px);
-    display: grid;
-    grid-row: 25% 75%;
+    display: flex;
+    flex-direction: column;
 }
 
-.imagenInicio {
+.imagen_centrada {
     width: clamp(300px, 50vw, 600px);
     align-self: center;
     
