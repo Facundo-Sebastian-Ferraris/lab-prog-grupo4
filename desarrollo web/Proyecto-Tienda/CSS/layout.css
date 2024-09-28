@@ -8,12 +8,37 @@ body {
 
 /*CONTENEDOR PARA NAVEGACION*/
 nav {
-    display: grid;
-    grid-template: 1vh clamp(50px, 10vh, 100px) 1vh / clamp(100px, 20vw, 300px) 2% repeat(4, clamp(100px, 20vw, 300px));
-    grid-gap: 10px;
+    display: flex;
+    align-items: center;
     padding: 10px;
 }
 
+.boton {
+    width:  100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size:1em;
+    border: none;
+    margin: 2%;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.btn1 {
+    justify-content: center;
+
+}
+
+.btn2 {
+    justify-content: center;
+
+}
+
+.btn3 {
+    justify-content: center;
+
+}
 
 .contenedorFinal {
     grid-area: 2/2;
@@ -91,27 +116,6 @@ nav {
     margin-bottom: 20%;
 }
 
-.boton {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    font-size: 1em;
-    border: none;
-    padding: 0px;
-    border-radius: 5%;
-}
-
-.btn1 {
-    grid-area: 2/3;
-}
-
-.btn2 {
-    grid-area: 2/4;
-}
-
-.btn3 {
-    grid-area: 2/5;
-}
 
 /*CONTENEDOR PARA BARRAS LATERALES Y PRINCIPAL*/
 .contenedor {

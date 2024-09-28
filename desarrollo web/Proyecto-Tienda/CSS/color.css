@@ -20,12 +20,15 @@ body {
 }
 
 .btn1, .btn2, .btn3  {
-    background-color: var(--paleta11);
     color: var(--txt);
 }
 
-.btn{
-    background-color: var(--error);
+.boton{
+    background-color: var(--boton);
+}
+
+.boton:hover{
+    background-color: var(--botonHover);
 }
 
 
