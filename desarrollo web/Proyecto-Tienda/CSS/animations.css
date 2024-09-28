@@ -1,6 +1,23 @@
 /*ANIMACIONES DE MOVIMIENTO*/
-.girar, .foto:hover{
+.girar, .credito_formato_foto:hover{
     animation: giro 1s linear infinite;
+}
+
+
+.tambalear{
+    animation: tambaleo 2s linear infinite, show;
+}
+
+.efecto {
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+    view-timeline-name: --reveal;
+    view-timeline-axis: block;
+    animation-timeline: --reveal;
+    animation-name: imgIn;
+    animation-range: entry 0% cover 100%;
+    animation-fill-mode: both;
 }
 
 @keyframes giro {
@@ -15,10 +32,6 @@
     }
 }
 
-.tambalear{
-    animation: tambaleo 2s linear infinite, show;
-}
-
 @keyframes tambaleo {
     0%{
         transform: rotate(-15deg);
@@ -31,17 +44,6 @@
     }
 }
 
-.efecto {
-    margin-top: 20%;
-    margin-bottom: 20%;
-
-    view-timeline-name: --reveal;
-    view-timeline-axis: block;
-    animation-timeline: --reveal;
-    animation-name: imgIn;
-    animation-range: entry 0% cover 100%;
-    animation-fill-mode: both;
-}
 
 @keyframes imgIn {
     0%{

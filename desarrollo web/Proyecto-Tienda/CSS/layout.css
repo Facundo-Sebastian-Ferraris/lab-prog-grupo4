@@ -1,118 +1,84 @@
 /*CSS PARA UBICACION DE CAJAS
 Estilos generales de estructura (grid, flexbox, contenedores, cabecera, pie de página).
 */
-body{
+body {
     margin: 0%;
     overflow-x: hidden;
 }
 
-
 /*CONTENEDOR PARA NAVEGACION*/
 nav {
     display: grid;
-    grid-template: 1vh 10vh 1vh/20% 2% repeat(4, 20%);
-    grid-gap: 10px; /* Espacio entre las celdas */
+    grid-template: 1vh clamp(50px, 10vh, 100px) 1vh / clamp(100px, 20vw, 300px) 2% repeat(4, clamp(100px, 20vw, 300px));
+    grid-gap: 10px;
     padding: 10px;
-}   
+}
 
-.contenedorFinal{
+
+.contenedorFinal {
     grid-area: 2/2;
     text-align: center;
     display: grid;
-    grid-template: 20vh 20vh 10vh 20vh 10vh 20VH / 1fr 1fr 1fr;
+    grid-template: clamp(100px, 20vh, 300px) clamp(100px, 20vh, 300px) clamp(50px, 10vh, 150px) clamp(100px, 20vh, 300px) clamp(50px, 10vh, 150px) clamp(100px, 20vh, 300px) / 1fr 1fr 1fr;
     margin: 0%;
-    /*background-color: yellow;*/
 }
 
-
-.p1{
-    grid-area: 1/2;
-    position: relative;
-}
-
-/*FERR*/
-.contenedorfotoCredito1{
-    grid-area: 2 /1;
-    display: grid;
-    grid-template: 1fr / 1fr 20vh 1fr;
-
-}
-
-.foto{
+.credito_formato_foto {
     background-size: cover;
     background-color: red;
     border-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
 
-.foto1{
+.credito_foto_contenedor{
+    display: grid;
+    grid-template: 100% / 1fr clamp(100px, 20vw, 300px) 1fr;
+}
+
+.foto_contenedor1 {
+    grid-area: 2 /1;
+}
+
+
+.foto_contenedor2 {
+    grid-area: 2 /3;
+}
+
+.foto_contenedor3 {
+    grid-area: 4/1;
+}
+
+.foto_contenedor4 {
+    grid-area: 4/3;
+}
+
+.credito_Hecho {
     grid-area: 1/2;
-    background-image: url('../assets/facu.png');
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*FERR*/
-.p2{
+.credito_Facu {
     grid-area: 3/1;
 }
 
-
-/*SAR*/
-.contenedorfotoCredito2{
-    grid-area: 2 /3;
-    display: grid;
-    grid-template: 1fr / 1fr 20vh 1fr;
-
-}
-
-.foto2{
-    grid-area: 1/2;
-    background-image: url('../assets/toni.png');
-
-}
-
-/*SAR*/
-.p3{
+.credito_Tony {
     grid-area: 3/3;
 }
 
-
-
-.contenedorfotoCredito3{
-    grid-area: 4/1;
-    display: grid;
-    grid-template: 1fr / 1fr 20vh 1fr;
-
-}
-
-.foto3{
-    grid-area: 1/2;
-    background-image: url('../assets/albany.png');
-
-}
-
-/*PETIT*/
-.p4{
+.credito_Alby {
     grid-area: 5/1;
 }
 
-.contenedorfotoCredito4{
-    grid-area: 4/3;
-    display: grid;
-    grid-template: 1fr / 1fr 20vh 1fr;
-
-}
-
-.foto4{
-    grid-area: 1/2;
-    background-image: url('../assets/sthefy.png');
-
-}
-
-/*CEDE*/
-.p5{
+.credito_Sthefy {
     grid-area: 5/3;
 }
 
+.foto {
+    grid-area: 1/2;
+}
 
 .logo {
     order: 0;
@@ -120,22 +86,19 @@ nav {
     grid-area: 2/1;
 }
 
-
-
-.logoImg{
+.logoImg {
     border-radius: 50%;
     margin-bottom: 20%;
 }
 
-.boton{
-    width: 100%;    
-    height: 100%;  
-    box-sizing: border-box; 
+.boton {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     font-size: 1em;
-    border: none;  
+    border: none;
     padding: 0px;
     border-radius: 5%;
-
 }
 
 .btn1 {
@@ -153,99 +116,27 @@ nav {
 /*CONTENEDOR PARA BARRAS LATERALES Y PRINCIPAL*/
 .contenedor {
     display: grid;
-    grid-template: 6fr 85vh/ 10vw 1fr 10vw;
+    grid-template: 6fr clamp(500px, 85vh, 1000px) / clamp(50px, 10vw, 200px) 1fr clamp(50px, 10vw, 200px);
 }
 
-.imagenInicio{
-    width: 480px;
+.imagenInicio {
+    width: clamp(300px, 50vw, 600px);
     aspect-ratio: 1/1;
 }
 
-.imagenLogo{
+.imagenLogo {
     height: 100%;
-    width: 70%;
+    width: clamp(100px, 70vw, 200px);
 }
 
-
 /*Layouts Auxiliares*/
-    /*Caja auxiliar para centrar entidad*/
-.centralizador{
+/*Caja auxiliar para centrar entidad*/
+.centralizador {
     text-align: center;
     grid-area: 1/2;
 }
 
-.efecto{
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-}
-
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    /* Reorganizar el grid para apilar elementos en móviles */
-    nav {
-        grid-template: 1vh 10vh 1vh / 1fr;
-    }
-
-    .contenedorFinal {
-        grid-template: repeat(6, 1fr) / 1fr; /* Cambia a 1 columna en móviles */
-    }
-
-    /* Redimensionar imágenes y fuentes */
-    .foto {
-        width: 100px;
-        height: 100px;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    .boton {
-        font-size: 10px;
-    }
-
-    .btn1, .btn2, .btn3 {
-        grid-area: auto;
-        width: 100%;
-        margin: 5px;
-    }
-
-    /* Ajustar la imagen de inicio en móviles */
-    .imagenInicio {
-        width: 80%;
-        aspect-ratio: 1/1;
-    }
-
-    .imagenLogo {
-        width: 50%;
-    }
-}
-
-/* Media Query para pantallas menores a 480px */
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-
-    .boton {
-        font-size: 8px;
-    }
-
-    /* Reorganizar aún más el contenido */
-    .contenedorFinal {
-        grid-template: repeat(6, 1fr) / 1fr; /* Mantener 1 columna en pantallas pequeñas */
-    }
-
-    .btn1, .btn2, .btn3 {
-        width: 100%; /* Asegura que los botones ocupen todo el ancho */
-        font-size: 12px; /* Ajuste adicional en el tamaño de la fuente */
-    }
-
-    .imagenInicio {
-        width: 100%;
-    }
+.efecto {
+    margin-top: clamp(100px, 20vh, 300px);
+    margin-bottom: clamp(100px, 20vh, 300px);
 }

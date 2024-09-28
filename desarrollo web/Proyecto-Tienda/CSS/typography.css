@@ -7,38 +7,36 @@ html {
     font-size: 16px;
 }
 
-.logo{
+.logo {
     text-align: center;
-    font-size: 1.5em;
+    font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
-.btn1, .btn2, .btn3  {
+.btn1, .btn2, .btn3 {
     font-family: comic;
-    font-size: 4rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     border: none;
     padding: 0;
 }
 
-.credito{
-    margin: 0%;
+.credito {
+    margin: 0px;
     font-family: Helvetica;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: clamp(3rem, 5vw, 5rem);
 }
 
 p {
-    margin: 3rem;
-    font-size: 2rem;
+    margin: clamp(1.5rem, 3vw, 3rem);
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-.btn{
+.btn {
     text-align: center;
-    font-size: 1.5em;
+    font-size: clamp(1.5rem, 3vw, 2rem);
 }
