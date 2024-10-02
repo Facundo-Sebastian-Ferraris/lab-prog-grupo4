@@ -235,7 +235,7 @@ body {
     transform: translateX(-50%);
     width: min(1400px,100vh);
     height: max-content;
-    padding-bottom: 100px;
+    padding-bottom: 180px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -250,6 +250,15 @@ body {
     -webkit-text-stroke: 2px white;
 }
 
+.texto{
+    margin: 0.5em;
+    font-family:comic;
+    font-size: 2em;
+    line-height: 1em;
+    color:white;
+    -webkit-text-stroke: 2px black;
+}
+
 .banner .content .descripcion{
     font-family: Poppins;
     text-align: right;
@@ -258,10 +267,6 @@ body {
 
 .banner .content h2{
     font-size: 3em;
-    color: blue;
-}
-
-.banner .content p{
-    color: green;
-    font-family: comic;
+    color:rgb(40, 3, 249);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
 }
