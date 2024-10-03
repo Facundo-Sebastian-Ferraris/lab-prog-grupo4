@@ -42,9 +42,23 @@ body {
     font-size: clamp(3rem, 5vw, 5rem);
 }
 
+.encabezado::after{
+    content: '';
+    background-color: white;
+    height: 10px;
+    width: max-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
 .productos .contenido{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / repeat(3,400px);
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     row-gap: 25rem; /*espacio entre las filas*/
     column-gap:6.5rem; /*espacio entre las columnas*/
     padding: 14.5em; /*espacio entre el borde*/
@@ -52,15 +66,15 @@ body {
 }
 
 .card{
-    width: 400px;
+    width: clamp(100px,400px,400px);
 }
 
 .card__content{
     text-align: center;
     position: relative;
     padding: 5em;
-    transition: transform 3s;
-    background: pink;
+    transition: transform 1s;
+    background: rgb(255, 192, 192);
     transform-style: preserve-3d;
 }
 
@@ -81,10 +95,13 @@ body {
     display: grid;
     align-content: center;
     color: white; /*de las letras tanto del front como back*/
+    text-shadow: 0 0 10px magenta;
+    box-shadow: 0 0 10px magenta;
+
 }
 
 [class^="front"] {
-    background: black; /*rgb(119, 123, 119);*/
+    background: black;
     background-size: cover;
     background-blend-mode:difference; /*overlay*/
 }
@@ -97,7 +114,8 @@ body {
     bottom: var(--spacer);
     left: var(--spacer);
     right: var(--spacer);
-    border: 3px solid currentColor; /*currentColor, trae el balnco del front*/
+    border: 10px solid currentColor;
+    box-shadow: 0px 0 20px magenta;
     transform:  var(--level-one);
 }
 
@@ -203,7 +221,11 @@ body {
     left: calc(50% - 100px);
     transform-style: preserve-3d;
     transform: perspective(1000px);
-    animation: autoRun 20s linear infinite;
+    animation: autoRun 5s linear infinite;
+}
+
+.banner:hover .slider:hover{
+    animation: none;
 }
 
 @keyframes autoRun{
@@ -219,11 +241,11 @@ body {
     inset: 0 0 0 0;
     transform: 
         rotateY(calc( (var(--posicion) - 1) * (360/var(--cantidad)) *1deg))
-        translateZ(550px);
+        translateZ(calc(var(--cantidad)*100px));
 }
 
 .banner .slider .item img{
-    width: 100%;
+    width: 75%;
     height: 100%;
     /*object-fit: cover;*/
 }

@@ -1,0 +1,30 @@
+.cartel{
+    height: 100vh;
+    /* overflow es un atributo que indica que se debe hacer cuando un elemento rebasa el div. 
+    En este caso lo escondemos por dentro la parte sobrante*/
+    overflow: hidden; 
+    /* la posicion relativa define en donde se ubicara teniendo como referencia
+    asi mismo.*/
+    position: relative;
+}
+
+/* las clases productos que estan contenidos en cartel deben tener: */
+.cartel .producto {
+    background-color: violet;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* z-index es para encimar elementos por sobre otros, cuanto mas grande, mas encimadi */
+    z-index: 1; 
+    transition: 0.5s;
+}
+
+.cartel .producto .lata {
+    background: url("../assets/PerkCans/lata.png");
+
+    /* background-size: alto ancho */
+    background-size: auto 100%;
+}
