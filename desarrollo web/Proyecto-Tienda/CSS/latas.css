@@ -1,5 +1,5 @@
 .cartel{
-    height: clamp(800px,100vh, 2000px);
+    height:auto;
     /* overflow es un atributo que indica que se debe hacer cuando un elemento rebasa el div. 
     En este caso lo escondemos por dentro la parte sobrante*/
     overflow: hidden; 
@@ -7,7 +7,7 @@
     asi mismo.*/
     /* position: relative; */
     display: grid;
-    grid-template: 1fr 1fr / repeat(5,1fr);
+    grid-template: repeat(5,1fr) / repeat(2,1fr);
     justify-content: center;
 }
 
