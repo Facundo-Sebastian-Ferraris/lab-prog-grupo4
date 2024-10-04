@@ -10,7 +10,7 @@
 
 /* las clases productos que estan contenidos en cartel deben tener: */
 .cartel .producto {
-    background-color: violet;
+    /* background-color: violet; */
     width: 500px;
     height: 500px;
     position: absolute;
@@ -23,8 +23,19 @@
 }
 
 .cartel .producto .lata {
-    background: url("../assets/PerkCans/lata.png");
+    background: 
+        url("../assets/PerkCans/02-perk.webp") -190px 0,
+        url("../assets/PerkCans/lata.png");
 
-    /* background-size: alto ancho */
     background-size: auto 100%;
+    background-blend-mode: multiply;
+    mask-image: url("../assets/PerkCans/lata.png");
+
+    width: 300px;
+    aspect-ratio: 2/4;
+
+    /* Aplicación del mascarado */
+    mask-size: auto 100%; /* Ajustamos el tamaño del mask */
+    mask-position: center; /* Centramos el mask */
+    mask-repeat: no-repeat; /* No repetir el mask */
 }
