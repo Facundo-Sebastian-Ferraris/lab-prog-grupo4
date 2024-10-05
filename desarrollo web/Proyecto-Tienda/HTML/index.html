@@ -1,110 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geek&Bites</title>
-    <link rel="stylesheet" href="../CSS/index.css">
-</head>
+    <link rel="stylesheet" href="../CSS/index.css" />
+  </head>
 
-<body>
+  <body>
     <!--SECCION DE NAVEGACION-->
     <nav>
-        <a class="logo" href="../HTML/index.html"><img class="imagenLogo" src="../assets/01-logo.jpeg"></a>
-        <a class="boton btn1" href="../HTML/indexcomida.html">COMIDA</a>
-        <a class="boton btn2">COMICS</a>
-        <a class="boton btn3" href="../HTML/indexContacto.html">CONTACTO</a>
+      <a class="logo" href="../HTML/index.html"
+        ><img class="imagenLogo" src="../assets/01-logo.jpeg"
+      /></a>
+      <a class="boton btn1" href="../HTML/indexcomida.html">COMIDA</a>
+      <a class="boton btn2" href="../HTML/indexComics.html">COMICS</a>
+      <a class="boton btn3" href="../HTML/indexContacto.html">CONTACTO</a>
     </nav>
 
     <!--SECCION DE PRESENTACION-->
     <div class="contenedor">
+      <!-- CONTENEDOR PRINCIPAL -->
+      <div class="centralizador">
+        <h1>¡Bienvenidos a Geek&Bites!</h1>
+        <img
+          class="imagen_centrada logoImg girar"
+          src="../assets/01-logo.jpeg"
+          alt="Descripción de la imagen"
+        />
 
-
-        <!-- CONTENEDOR PRINCIPAL -->
-        <div class="centralizador">
-
-
-
-            <h1>¡Bienvenidos a Geek&Bites!</h1>
-            <img class="imagen_centrada logoImg girar" src="../assets/01-logo.jpeg" alt="Descripción de la imagen">
-
-
-            <!-- CONTENEDOR -->
-            <div class="efecto">
-                <p>
-                    El único bar donde los héroes se reúnen después de una intensa jornada de salvar el multiverso
-                    (o simplemente después de una buena maratón de anime)! Aquí, los fans del cómic, videojuegos y
-                    películas épicas encuentran su santuario entre paredes llenas de portadas legendarias y figuras
-                    de acción que parecen cobrar vida.
-                </p>
-                <img class="imagen_centrada" src="../assets/01-index-kids-eating.jpeg" alt="nenesjugando">
-            </div>
-
-
-
-            <div class="efecto">
-                <p>
-                    Nos especializamos en comida nerd para todas las edades y gustos, con platillos que rinden homenaje
-                    a tus personajes favoritos.
-                </p>
-                <img class="imagen_centrada" src="../assets/02-index-food.jpeg" loading="lazy" alt="comida">
-            </div>
-
-
-
-            <div class="efecto">
-                <p>
-                    Ah, y claro, en Geek&Bites NO servimos bebidas alcohólicas. En su lugar, nuestras Pociones de Maná y
-                    Elixires de Salud te llenarán de energía mientras lees tu cómic favorito o participas en alguna de
-                    nuestras épicas noches de trivia geek.
-                </p>
-                <img class="imagen_centrada" src="../assets/01-index-zero-alcohol-drink.jpeg" loading="lazy"
-                    alt="botella">
-            </div>
-
-
-
-            <div class="efecto efecto1" style="margin-bottom: 10%;">
-                <p>
-                    Así que, si eres un amante de las historietas, los videojuegos retro, o las sagas intergalácticas,
-                    ¡este es tu lugar! Ponte cómodo, pide tu combo friki, y prepárate para disfrutar de una experiencia
-                    gastronómica fuera de este mundo.
-                </p>
-                <img class="imagen_centrada" src="../assets/04-index-kids-eating.jpeg" loading="lazy" alt="pibes pc">
-            </div>
-
+        <!-- CONTENEDOR -->
+        <div class="efecto">
+          <p>
+            El único bar donde los héroes se reúnen después de una intensa
+            jornada de salvar el multiverso (o simplemente después de una buena
+            maratón de anime)! Aquí, los fans del cómic, videojuegos y películas
+            épicas encuentran su santuario entre paredes llenas de portadas
+            legendarias y figuras de acción que parecen cobrar vida.
+          </p>
+          <img
+            class="imagen_centrada"
+            src="../assets/01-index-kids-eating.jpeg"
+            alt="nenesjugando"
+          />
         </div>
 
-        <div class="contenedorFinal">
-            <div class="credito credito_Hecho tambalear">
-                <p class="hecho">Hecho por:</p>
-            </div>
-
-            <div class="credito_foto_contenedor foto_contenedor1">
-                <img class="credito_formato_foto foto" src="../assets/facu.png" loading="lazy">
-            </div>
-
-            <p class="credito credito_Facu">FERRARIS FACUNDO</p>
-
-            <div class="credito_foto_contenedor foto_contenedor2">
-                <img class="credito_formato_foto foto" src="../assets/toni.png" loading="lazy">
-            </div>
-
-            <p class="credito credito_Tony">SARMIENTO ANTONIO</p>
-
-            <div class="credito_foto_contenedor foto_contenedor3">
-                <img class="credito_formato_foto foto" src="../assets/albany.png" loading="lazy">
-            </div>
-
-            <p class="credito credito_Alby">PETIT ALBANY</p>
-
-            <div class="credito_foto_contenedor foto_contenedor4">
-                <img class="credito_formato_foto foto" src="../assets/sthefy.png" loading="lazy">
-            </div>
-
-            <p class="credito credito_Sthefy">CEDEÑO STHEFANY</p>
+        <div class="efecto">
+          <p>
+            Nos especializamos en comida nerd para todas las edades y gustos,
+            con platillos que rinden homenaje a tus personajes favoritos.
+          </p>
+          <img
+            class="imagen_centrada"
+            src="../assets/02-index-food.jpeg"
+            loading="lazy"
+            alt="comida"
+          />
         </div>
 
+        <div class="efecto">
+          <p>
+            Ah, y claro, en Geek&Bites NO servimos bebidas alcohólicas. En su
+            lugar, nuestras Pociones de Maná y Elixires de Salud te llenarán de
+            energía mientras lees tu cómic favorito o participas en alguna de
+            nuestras épicas noches de trivia geek.
+          </p>
+          <img
+            class="imagen_centrada"
+            src="../assets/01-index-zero-alcohol-drink.jpeg"
+            loading="lazy"
+            alt="botella"
+          />
+        </div>
+
+        <div class="efecto efecto1" style="margin-bottom: 10%">
+          <p>
+            Así que, si eres un amante de las historietas, los videojuegos
+            retro, o las sagas intergalácticas, ¡este es tu lugar! Ponte cómodo,
+            pide tu combo friki, y prepárate para disfrutar de una experiencia
+            gastronómica fuera de este mundo.
+          </p>
+          <img
+            class="imagen_centrada"
+            src="../assets/04-index-kids-eating.jpeg"
+            loading="lazy"
+            alt="pibes pc"
+          />
+        </div>
+      </div>
+
+      <div class="contenedorFinal">
+        <div class="credito credito_Hecho tambalear">
+          <p class="hecho">Hecho por:</p>
+        </div>
+
+        <div class="credito_foto_contenedor foto_contenedor1">
+          <img
+            class="credito_formato_foto foto"
+            src="../assets/facu.png"
+            loading="lazy"
+          />
+        </div>
+
+        <p class="credito credito_Facu">FERRARIS FACUNDO</p>
+
+        <div class="credito_foto_contenedor foto_contenedor2">
+          <img
+            class="credito_formato_foto foto"
+            src="../assets/toni.png"
+            loading="lazy"
+          />
+        </div>
+
+        <p class="credito credito_Tony">SARMIENTO ANTONIO</p>
+
+        <div class="credito_foto_contenedor foto_contenedor3">
+          <img
+            class="credito_formato_foto foto"
+            src="../assets/albany.png"
+            loading="lazy"
+          />
+        </div>
+
+        <p class="credito credito_Alby">PETIT ALBANY</p>
+
+        <div class="credito_foto_contenedor foto_contenedor4">
+          <img
+            class="credito_formato_foto foto"
+            src="../assets/sthefy.png"
+            loading="lazy"
+          />
+        </div>
+
+        <p class="credito credito_Sthefy">CEDEÑO STHEFANY</p>
+      </div>
     </div>
-</body>
+  </body>
+</html>
