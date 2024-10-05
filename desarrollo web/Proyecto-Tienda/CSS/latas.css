@@ -1,29 +1,32 @@
+
 .cartel{
     height:auto;
     /* overflow es un atributo que indica que se debe hacer cuando un elemento rebasa el div. 
     En este caso lo escondemos por dentro la parte sobrante*/
-    overflow: hidden; 
+    /* overflow: hidden;  */
     /* la posicion relativa define en donde se ubicara teniendo como referencia
     asi mismo.*/
     /* position: relative; */
-    display: grid;
-    grid-template: repeat(5,1fr) / repeat(2,1fr);
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 /* las clases productos que estan contenidos en cartel deben tener: */
 .cartel .producto {
     /* background-color: violet; */
-    width: 60%;
+    width: 15%;
     height: 100%;
     /* position: absolute; */
     /* z-index es para encimar elementos por sobre otros, cuanto mas grande, mas encimadi */
     z-index: 1; 
     transition: 0.5s;
-    --izquierda: 20%
+    --izquierda: 20%;
 }
 
 .cartel .producto .lata {
+    position: relative;
     background: 
         var(--etiqueta) var(--izquierda) 0,
         url("../assets/PerkCans/lata.png");
@@ -32,7 +35,7 @@
     background-blend-mode: multiply;
     mask-image: url("../assets/PerkCans/lata.png");
 
-    width: 100;
+    width: 100%;
     aspect-ratio: 1/2;
 
     /* Aplicación del mascarado */
@@ -40,8 +43,10 @@
     mask-position: center; /* Centramos el mask */
     mask-repeat: no-repeat; /* No repetir el mask */
     transition: 0.5s;
+    transform-style: preserve-3d;
+
 }
 
 .producto .lata:hover{
-    --izquierda: 75%
+     --izquierda: 75%;    
 }

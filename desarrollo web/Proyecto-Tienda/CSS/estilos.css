@@ -17,7 +17,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     height: 100vh; /*agregado*/
-    overflow-x: hidden;
 }
 
 /*Propios de la seccion*/
@@ -56,7 +55,7 @@ body {
 
 
 
-.productos .contenido{
+.contenido{
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / repeat(3,400px);
     /* display: flex; */
@@ -68,6 +67,7 @@ body {
 }
 
 .card{
+    position: relative;
     width: clamp(100px,400px,400px);
 }
 
@@ -293,4 +293,9 @@ body {
     font-size: 3em;
     color:rgb(40, 3, 249);
     -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
 }
