@@ -10,34 +10,28 @@
 /* seccion de tags,clases,ids */
 
 nav {
-  /* dimension */
-  height: clamp(30px,15vh,100px);
 
-  /* margenes */
-  margin-top: clamp(5px,10vh,40px);
+  height: 60px;
   
   /* padding */
-  padding: 0px;
+  padding: 10px;
   
   /* disposicion */
   display: flex;
-  align-items: stretch;
+  align-items: center; /*stretch*/
   justify-content: space-evenly;
-  
+  background-color: var(--paleta11);
 }
 
 .boton {
   /* dimension */
   width:  15vw;
-  height: 100%;
-  border-radius: 2%;
+  height: 30px;
+  height: 80px;
+  border-radius: 3%;
 
   /* margenes */
   margin:0%;
-
-  /* padding */
-  padding-top: 5%;
-  padding-bottom: 5%;
 
   /* disposicion */
   display: flex;
@@ -49,9 +43,6 @@ nav {
   font-size:1em;
   font-family: comic;
   font-size: clamp(1rem, 2vw, 4rem);
-
-  /* colores */
-  background-color: var(--boton);
 }
 
 .boton:hover{
@@ -59,19 +50,17 @@ nav {
 }
 
 .logo {
-  /* dimension */
-  width: clamp(10px, 10vw, 200px);
-  height: clamp(10px, 10vw, 200px);
-  border-radius: 50%;
 
   /* margenes */
   margin: 0%;
 
-  /* fondo */
-  background: url("../assets/01-logo.jpeg");
-  background-size: cover;
-
   /* miscelaneo */
   display: block;
 
+}
+
+.imagenLogo{
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
 }

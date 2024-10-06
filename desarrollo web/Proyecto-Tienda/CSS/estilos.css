@@ -32,7 +32,7 @@ body {
 
 
 *, *::before, *::after{
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     margin: 0;
 }
 
@@ -56,8 +56,14 @@ body {
 
 
 .contenido{
-    display: grid;
+    /*display: grid;
     grid-template: 1fr 1fr 1fr 1fr / repeat(3,400px);
+    */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 1fr; /* o el tamaño que prefieras */
+
     /* display: flex; */
     /* flex-wrap: wrap; */
     row-gap: 25rem; /*espacio entre las filas*/
@@ -202,100 +208,17 @@ body {
     background-size: 40em;
 }
 
-/*Estilo de la seccion de bebidas*/
-@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
-@import url('https://fonts.cdnfonts.com/css/poppins');
-
-.banner{
-    width: 100%;
-    height: 100vh;
+h1{
+    color: rgb(58, 1, 98);
     text-align: center;
-    overflow: hidden;
-    position: relative;
-    margin-top: 15em;
-}
-
-.banner .slider{
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    top: 10%;
-    left: calc(50% - 100px);
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    animation: autoRun 5s linear infinite;
-}
-
-.banner:hover .slider:hover{
-    animation: none;
-}
-
-@keyframes autoRun{
-    from{
-        transform: perspective(1000px) rotateX(-6deg) rotateY(0deg);
-    }to{
-        transform: perspective(1000px) rotateX(-6deg) rotateY(300deg);
-    }
-}
-
-.banner .slider .item{
-    position: absolute;
-    inset: 0 0 0 0;
-    transform: 
-        rotateY(calc( (var(--posicion) - 1) * (360/var(--cantidad)) *1deg))
-        translateZ(calc(var(--cantidad)*100px));
-}
-
-.banner .slider .item img{
-    width: 75%;
-    height: 100%;
-    /*object-fit: cover;*/
-}
-
-.banner .content{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1400px,100vh);
-    height: max-content;
-    padding-bottom: 180px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.banner .content h1{
-    font-family:'ICA Rubrik';
-    font-size: 8em;
-    line-height: 1em;
-    color:rgb(60, 75, 70);
-    -webkit-text-stroke: 2px white;
-}
-
-.texto{
-    margin: 0.5em;
-    font-family:comic;
-    font-size: 2em;
-    line-height: 1em;
-    color:white;
-    -webkit-text-stroke: 2px black;
-}
-
-.banner .content .descripcion{
-    font-family: Poppins;
-    text-align: right;
-    max-width: 200px;
-}
-
-.banner .content h2{
-    font-size: 3em;
-    color:rgb(40, 3, 249);
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
-}
-
-.contenedor{
-    display: flex;
-    justify-content: center;
+    margin: 15rem 0 15rem 0;
+    font-family: comic;
+    font-size: 4.5rem;
+    text-shadow: 
+        -1px -1px 0px white,
+         1px -1px 0px white,
+        -1px  1px 0px white,
+         1px  1px 0px white; /* Borde negro */
+    font-weight: 300;
+    background-color: white;
 }

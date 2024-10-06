@@ -11,6 +11,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 0 20px 20px 20px;
 }
 
 /* las clases productos que estan contenidos en cartel deben tener: */

@@ -1,9 +1,5 @@
 @import 'colors.css';
 
-nav, nav > div{
-    background-color: var(--paleta1);
-}
-
 body {
     background-color: var(--error);
     background-image: url('../assets/neonRoad.gif');
@@ -16,21 +12,12 @@ body {
     width: 100vw;
 }
 
-
-.efecto, .logo{
+.efecto{
     background-color: var(--paleta11);
 }
 
 .btn1, .btn2, .btn3  {
     color: var(--txt);
-}
-
-.boton{
-    background-color: var(--boton);
-}
-
-.boton:hover{
-    background-color: var(--botonHover);
 }
 
 

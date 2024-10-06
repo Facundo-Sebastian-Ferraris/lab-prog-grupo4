@@ -6,28 +6,15 @@
   font-family: "comic";
   src: url("../assets/fonts/Rethogen Atomics.otf") format("opentype");
 }
-nav {
-  display: grid;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; /* Ocupa todo el ancho de la página */
-  justify-content: center; /* Distribuye los elementos del menú */
-  padding: 1em;
-}
 
 body {
   background-color: var(--error);
-  background-image: url("../assets/neonRoad.gif");
+  background-image: url('../assets/neonRoad.gif');
   background-size: cover;
-  background-position: center;
+  background-position: center; 
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
+  background-attachment: fixed; 
+  height: 100vh; /*agregado*/
 }
 
 .comics {
@@ -36,6 +23,8 @@ body {
   justify-items: center;
   padding: 4.5em;
   margin-top: 7em;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Libro*/
