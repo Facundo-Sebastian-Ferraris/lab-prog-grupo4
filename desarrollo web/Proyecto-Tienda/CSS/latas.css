@@ -24,6 +24,7 @@
     z-index: 1; 
     transition: 0.5s;
     --izquierda: 20%;
+
 }
 
 .cartel .producto .lata {
@@ -45,9 +46,10 @@
     mask-repeat: no-repeat; /* No repetir el mask */
     transition: 0.5s;
     transform-style: preserve-3d;
+    filter: drop-shadow(0 0 1000px magenta);
 
 }
 
 .producto .lata:hover{
-     --izquierda: 75%;    
+     --izquierda: 75%;   
 }

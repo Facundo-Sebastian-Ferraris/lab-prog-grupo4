@@ -11,6 +11,15 @@ const paper3 = document.querySelector("#p3");
 prevBtn.addEventListener("click", irAnteriorPagina);
 nextBtn.addEventListener("click", irSiguientePagina);
 
+// Agregar evento de teclado para las teclas de flecha
+document.addEventListener("keydown", function(event) {
+  if (event.key === "ArrowLeft") {
+      irAnteriorPagina();
+  } else if (event.key === "ArrowRight") {
+      irSiguientePagina();
+  }
+});
+
 //variables
 let locacionActual = 1;
 let numDeHojas = 3;
