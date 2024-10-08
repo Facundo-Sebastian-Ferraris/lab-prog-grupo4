@@ -1,5 +1,5 @@
 
-.cartel{
+#cartel{
     height:auto;
     /* overflow es un atributo que indica que se debe hacer cuando un elemento rebasa el div. 
     En este caso lo escondemos por dentro la parte sobrante*/
@@ -15,7 +15,7 @@
 }
 
 /* las clases productos que estan contenidos en cartel deben tener: */
-.cartel .producto {
+#cartel .producto {
     /* background-color: violet; */
     width: 15%;
     height: 100%;
@@ -27,7 +27,7 @@
 
 }
 
-.cartel .producto .lata {
+#cartel .producto .lata {
     position: relative;
     background: 
         var(--etiqueta) var(--izquierda) 0,
