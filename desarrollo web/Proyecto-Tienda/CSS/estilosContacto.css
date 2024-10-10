@@ -31,6 +31,21 @@ body {
     transform: translateY(10rem);
     font-size: clamp(3rem, 5vw, 5rem);
 }
+.contactos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedorPrincipal,.contenidoFoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fotoLocal{
+    height: auto;
+    width: 500px;
+}
 
 .contactos .contenido {
     display: flex;
