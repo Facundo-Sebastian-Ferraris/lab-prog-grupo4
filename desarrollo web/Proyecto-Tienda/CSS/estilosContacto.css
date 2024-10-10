@@ -11,7 +11,7 @@
 
 body {
     background-color: var(--error);
-    background-image: url('../assets/contactoFondo.jpg');
+    background-image: url('../assets/neonRoad.gif');
     background-size: 100% 100vh;
     /* Ajusta el fondo al 100% de ancho y 20vh de alto */
     background-position: center;
