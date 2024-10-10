@@ -55,7 +55,7 @@ body {
     top: 0px;
     /* Mueve el bloque 50px hacia abajo */
     padding: 5em;
-    transition: transform 3s;
+    transition: transform 0.5s;
 
     transform-style: preserve-3d;
 }
