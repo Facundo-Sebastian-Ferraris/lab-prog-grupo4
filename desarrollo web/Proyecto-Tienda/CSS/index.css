@@ -33,7 +33,7 @@ p,h1{
 }
 
 html {
-    font-size: clamp(8px,1vw,14px);
+    font-size: clamp(10px,1vw,14px);
 }
 
 .credito {
