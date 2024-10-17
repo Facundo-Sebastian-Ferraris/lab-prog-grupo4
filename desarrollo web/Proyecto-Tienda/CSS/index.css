@@ -1,5 +1,30 @@
 @import 'barranav.css';
-@import 'color.css';
+
+@import 'colors.css';
+
+body {
+    background-color: var(--error);
+    background-image: url('../assets/neonRoad.gif');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.efecto{
+    background-color: var(--paleta11);
+}
+
+
+
+
+p,h1{
+    color: var(--txt);
+}
+
 
 
 @font-face {
@@ -8,7 +33,7 @@
 }
 
 html {
-    font-size: clamp(8px,1vw,12px);
+    font-size: clamp(8px,1vw,14px);
 }
 
 .credito {
@@ -20,7 +45,8 @@ html {
 }
 
 .bienvenida {
-    font-size: 2.5rem;
+    font-family: Helvetica;
+    font-size: 5rem;
 }
 
 p {
@@ -109,7 +135,7 @@ body {
 }
 
 .imagen_centrada {
-    width: clamp(175px, 50vw, 350px);
+    width: clamp(175px, 50vw, 450px);
     margin-bottom: clamp(30px, 50vw, 35px);
 
     height: auto;
