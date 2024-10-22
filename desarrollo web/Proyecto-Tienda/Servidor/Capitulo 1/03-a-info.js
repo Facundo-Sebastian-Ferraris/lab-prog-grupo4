@@ -9,6 +9,7 @@ console.log(`Memoria libre: ${os.freemem()} bytes`);
 console.log(`Total de memoria: ${os.totalmem()} bytes\n\n\n`);
 console.log('doxeado papaaa! B)');
 
+//PARA EL PROXIMO EJERCICIO:
 //EN LA TERMINAL EJECUTA: npm init -y
 //se creara un package.json para inicializar un nuevo proyecto ^.^
 //tambien ejecuta en terminal: npm install chalk

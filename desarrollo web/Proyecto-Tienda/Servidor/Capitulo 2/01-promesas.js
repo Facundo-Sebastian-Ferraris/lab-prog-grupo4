@@ -6,6 +6,18 @@
 // Resuelta o Cumplida (fulfilled): La operación se completó exitosamente y se obtuvo el resultado.
 // Rechazada (rejected): Hubo un error o fallo en la operación y se obtuvo una razón del fallo.
 
+
+const miPromesa = new Promise((resolve, reject) => {
+    let exito = true;
+
+    if (exito) {
+        resolve('La operación fue exitosa.');
+    } else {
+        reject('Hubo un error en la operación.');
+    }
+});
+
+
 //EJEMPLO:
 // Imagina que pides una pizza por teléfono:
 
@@ -13,13 +25,15 @@
 // Estado resuelto: Recibes la pizza.
 // Estado rechazado: No te entregan la pizza debido a un problema (tal vez se quedaron sin ingredientes o se retrasaron).
 
+
+//ejemplo de codigo aplicado a los fileSystem
 //importamos el modulo como promesa
 const fs = require('fs/promises'); 
 
 //direccion del txt
 const direccionArchivo = '01-archivo.txt'; 
 
-//creamos una funcion asincronica *concepto asincrono al final de este .js
+//creamos una funcion asincronica *concepto asincrono explicado al final de este codigo ;)
 async function manejarArchivos() {
     try {
         // el await sirve para indicar que la operacion debe detenerse hasta que la intruccion señalada
@@ -30,6 +44,8 @@ async function manejarArchivos() {
         let data = await fs.readFile(direccionArchivo, 'utf8');
         console.log('Contenido del archivo:', data);
 
+        //se esperara a que se termine la instruccion fs.appendFile(direccionArchivo, '\nNuevo contenido agregado.');
+        //para seguir
         await fs.appendFile(direccionArchivo, '\nNuevo contenido agregado.');
         console.log('Contenido agregado.');
     } catch (error) {

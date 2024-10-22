@@ -11,7 +11,7 @@ let
 div_centralizador.className = "centralizador";
 h1_bienvenida.className     = "bienvenida";
 img_logoGiratorio.classList = "imagen_centrada logoImg girar";
-img_logoGiratorio.src = "../assets/01-logo.jpeg";
+img_logoGiratorio.src = "/01-logo.jpeg";
 img_logoGiratorio.alt = "logoGirador";
 div_contenedorFinal.className = "contenedorFinal";
 
@@ -29,7 +29,7 @@ contenedor.appendChild(div_contenedorFinal);
 
 //insercion de contenidos
 let contenido;
-fetch('../javascript/indexContent.json')
+fetch('/indexContent.json')
   .then(response => response.json())  // Convertir la respuesta a JSON
   .then(data => {
     contenido = data;                // Asignar los datos a la variable
@@ -79,7 +79,7 @@ div_hechoPor.appendChild(p_hechoPor);
 div_contenedorFinal.appendChild(div_hechoPor);
 //insercion de creditos
 let credi;
-fetch('../javascript/creditos.json')
+fetch('/creditos.json')
   .then(response => response.json())  // Convertir la respuesta a JSON
   .then(data => {
     credi = data;                // Asignar los datos a la variable
