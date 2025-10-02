@@ -33,7 +33,7 @@ fetch('../javascript/indexContent.json')
   .then(response => response.json())  // Convertir la respuesta a JSON
   .then(data => {
     contenido = data;                // Asignar los datos a la variable
-    // console.log(contenido);        
+     console.log("funca el json");        
 
     contenido.forEach(elemento => {
         let div_efecto = document.createElement('div');
